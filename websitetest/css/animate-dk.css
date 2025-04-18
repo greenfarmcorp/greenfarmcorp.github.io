@@ -1,0 +1,90 @@
+/* 
+ * https://animate.style/ 
+ * tham khảo hiệu ưng từ link trên, file animate.css đang dùng là version 3, phiên bản mơi là 4 
+ * sửa lại vài hiệu ứng, thêm duôi -dk để chỉnh thời gian chậm đi (3s) so với thời gian của animate (1s)
+ */
+@charset "UTF-8";
+
+/* sửa toàn bộ animated luôn */
+.animated-dk {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/* cấu trúc này của v4 */
+/* This only changes this particular animation duration */
+/* .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+} */
+
+@-webkit-keyframes bounce-dk {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce-dk {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+  
+    60% {
+      -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+  
+.bounce-dk {
+-webkit-animation-name: bounce-dk; /* name là đặt theo @webkit-keyframes */
+animation-name: bounce-dk; /* name này của @keyframe ?!?!  */
+/* -webkit-animation-duration: 1s; */
+animation-duration: 3s;
+}
+
+@-webkit-keyframes fadeIn-dk {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeIn-dk {
+0% {
+    opacity: 0;
+}
+
+100% {
+    opacity: 1;
+}
+}
+  
+.fadeIn-dk {
+-webkit-animation-name: fadeIn-dk;
+animation-name: fadeIn-dk;
+animation-duration: 3s;
+}

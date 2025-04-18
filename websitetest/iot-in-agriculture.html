@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Green Farm Corporation Ltd
-permalink: /careers/
+permalink: /iot-in-agriculture/
 ---
 
 
@@ -17,6 +17,7 @@ permalink: /careers/
                         </p>
                         <ul>
                             <li><i class="fas fa-map-marker-alt"></i>133 Creek Road, London SE8 3BU</li>
+                            <!-- <li> <i class="fas fa-envelope-open"></i>Info@greenfarm.com</li> -->
                             <li> <i class="fas fa-mobile-alt"></i>0730 9343 999</li>
                         </ul>
                     </div>
@@ -89,28 +90,24 @@ permalink: /careers/
                 </div><!-- /.navbar-collapse -->
             </div>
 
-
-
         </nav>
         <!-- End Navigation -->
 
     </header>
     <!-- End Header -->
-
     
-
 <!-- Start Breadcrumb 
 ============================================= -->
 <!-- background img 1900x841 -->
 <!-- <div class="breadcrumb-area text-center shadow dark bg-fixed text-light" style="background-image: url(/static/greenfarm/img/organic-hydroponic-vegetable-cultivation-farm.jpeg)"> -->
-    <div class="breadcrumb-area text-center shadow dark bg-fixed text-light" style="background-image: url(images/Green_Farming_Technology_Urban_Farm.header.jpeg)">
+<div class="breadcrumb-area text-center shadow dark bg-fixed text-light" style="background-image: url(images/Green_Farming_Technology_Urban_Farm.header.jpeg)">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
-                <h1>Work With Us</h1>
+                <h1>IoT In Agriculture</h1>
                 <ul class="breadcrumb">
-                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
-                    <li class="active">Careers</li>
+                    <li><a href="{% url 'pages:home' %}"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="active">How IoT In Agriculture Works</li>
                 </ul>
             </div>
         </div>
@@ -121,27 +118,115 @@ permalink: /careers/
 <!-- Start Blog
 ============================================= -->
 
-<div class="faq-area bg-gray default-padding-top">
+<div class="blog-area single full-blog full-blog default-padding">
     <div class="container">
-        <div class="faq-items">
-            <div class="row align-center">
+        <div class="blog-items">
+            <div class="row">
+                <div class="blog-content wow fadeInUp col-lg-10 offset-lg-1 col-md-12">
+                    <div class="item">
+                        <div class="blog-item-box">
 
-                <div class="col-lg-4 thumb wow fadeInUp" data-wow-delay="550ms">
+                            <div class="thumb">
 
-                </div>
+                                <img src="images/Yanmar-Customer-Use-Case-1024x771.png" alt="Thumb">
 
-                <div class="col-lg-7 offset-lg-1 wow fadeInRight">
-                    <div class="heading">
-                        <h2 class="area-title">Opening Positions</h2>
+                            </div>
 
-                        <img src="images/coming-soon.png" alt="Thumb">
+
+                            <div class="info">
+
+
+
+                                <h3>How IoT In Agriculture Works</h3>
+
+                                <p>
+                                    There is the involvement of various smart sensors, devices, and data analytics platforms to collect, transmit, and analyze data from agricultural operations. Here’s a step-by-step process of IoT working in agriculture:
+                                </p>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <h4>Sensing and Data Collection</h4>
+                                        <p>Different environmental parameters such as temperature, humidity, soil moisture, light intensity, and weather conditions are collected with different IoT devices and sensors deployed to the farm. The IoT sensors can be placed in plants, animals, soil,  weather stations, etc.
+                                        </p>
+
+
+                                    </div>
+
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="images/Blog2-4.jpeg" alt="Thumb">
+                                    </div>
+
+                                </div>
+
+                                <h4>Data Transmission</h4>
+                                <p>The transmitted data can be collected through various communication protocols such as cellular networks, Wi-Fi, satellite connections, etc. The selection of sensors depends on the range of devices, the size of farms, and the availability of network infrastructure.
+                                </p>
+
+
+
+
+                                <h4>Data Storage and Cloud Platforms</h4>
+                                <p>The collected data can be stored on local servers or cloud-based platforms. However, there is a great level of data scalability and accessibility when opting for cloud storage instead of local servers for handling vast amounts of data generated by multiple farms.
+                                </p>
+
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <img src="images/IoT-dashboard-greenhouse.png" height="141" alt="Thumb">
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <h4>Data Analytics</h4>
+                                        <p>There is a utilization of sophisticated data analytics algorithms and tools for analyzing and processing information. The analytics can reveal data patterns and trends that can be used for optimizing agricultural processes and making informed decisions.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-8">
+                                        <h4>Decision Making and Automation</h4>
+                                        <p>
+                                            Data collected for different purposes, such as scheduling, irrigation activities, pest control, and other farming activities, can be automated for carrying out specific actions, such as activating machinery or adjusting irrigation systems.
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <img src="images/Automating-Business-Processes-with-AI-ML-for-Business-Decision-Makers.gif" height="141" alt="Thumb">
+                                    </div>
+                                </div>
+
+                                <h4>Blockchain for Traceability:</h4>
+                                <p>
+                                    Blockchain technology is being explored for enhancing traceability in hydroponic farming. By recording every stage of the supply chain – from planting and harvesting to packaging and distribution – blockchain ensures transparency and traceability. Consumers can access detailed information about the origin and journey of the produce, promoting trust and accountability in the industry.
+                                </p>
+
+                                <h4>Remote Monitoring and Control</h4>
+                                <p>
+                                    Using real-time monitoring tools allows farmers to optimize resource usage even if they are not physically present on the farm and can better manage the operations of their farm remotely through mobile applications or web interfaces.
+                                </p>
+
+                                <h4>Integration with Farm Management Software</h4>
+                                <p>
+                                    The farmers can perform seamless data sharing and streamline the decision-making process by integrating IoT devices and platforms with existing farm management software or agriculture-specific applications.
+                                </p>
+
+                                <h4>Data Security and Privacy</h4>
+                                <p>
+                                    Major data security practices such as data authentication, encryption, and restricted control access are implemented to protect sensitive information collected by IoT sensors.
+                                </p>
+
+                                <br>
+
+                                <h3>Success stories when using technology applied to hydroponics</h3>
+                                <blockquote>
+                                    <p>Bowery Farming, based in New Jersey, is a hydroponic vertical farm that leverages automation, machine learning, and data analytics to optimize every aspect of the growing process. Their proprietary BoweryOS platform monitors and adjusts variables such as light, nutrient levels, and temperature in real-time. By embracing technology, Bowery Farming achieves efficient resource utilization, reduces waste, and delivers fresh, locally grown produce to urban markets. This success story demonstrates the scalability and sustainability of technology-driven hydroponic farming</p>
+                                    <cite>– Bowery Farming</cite>
+                                </blockquote>
+
+                            </div>
+                        </div>
                     </div>
-
-
-
-
                 </div>
-
             </div>
         </div>
     </div>

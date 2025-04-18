@@ -1,0 +1,269 @@
+/* ----------------------------------
+- clone phần .logo-carousel .owl-dots { display: none !important; } từ insufiry sang để làm 
+client logos 
+*/
+
+
+/*
+** General Styles for HTML tags
+*/
+.bg-dark-greenfarm {
+    background: #0F5325 !important;
+  }
+
+.bg-dark-2-greenfarm {
+    background: #57AE47 !important;
+}
+
+.bg-light-greenfarm {
+    background: #A5CE3F !important;
+}
+
+.bg-gradient-green-dk {
+    background: rgb(15,83,37);
+    background: linear-gradient(97deg, #0F5325 36%, rgb(27 252 109) 100%);
+}
+
+.bg-gradient-green-dk2 {
+    background: rgb(87,174,71);
+    background: linear-gradient(97deg, rgba(87,174,71,1) 36%, rgba(252,197,27,1) 100%);
+}
+
+.bg-gradient-green-dk3 {
+    background: rgb(165,206,63);
+    background: linear-gradient(97deg, rgba(165,206,63,1) 36%, rgba(252,197,27,1) 100%);
+}
+
+.text-greenfarm {
+    color: #0F5325;
+    margin-bottom: 20px;
+}
+
+.text-greenfarm2 {
+    /* màu vàng hơi tối */
+    color: #e7c35f;
+    /* đổi sang rgba để đơn vi cuối cùng là opacity 80% */
+    /* color: rgba(231, 195, 95, 0.8);  */
+    margin-bottom: 20px;
+    /* opacity này cũng tương tự */
+    opacity: 0.7;
+}
+
+.text-greenfarm3 {
+    /* màu xám */
+    color: #999999; 
+    margin-bottom: 20px;
+}
+
+.text-greenfarm4 {
+    /* màu xám */
+    color: #666666; 
+    margin-bottom: 20px;
+}
+
+.text-greenfarm5 {
+    /* màu vàng hơi sáng */
+    color: #f1cf69; 
+    margin-bottom: 20px;
+}
+
+.text-greenfarm6 {
+    /* màu xám hơi trắng mờ */
+    color: #cccccc; 
+    margin-bottom: 20px;
+}
+
+.text-dk{
+    /* xanh sáng */
+    color: #cdd0d3; 
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+/* sửa phần footer social */
+footer .social-dk li {
+    display: inline-block;
+    margin-right: 15px;
+}
+  
+footer .social-dk li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 43px;
+    text-align: center;
+    /* background: #ffffff; */
+    border-radius: 50%;
+    /* color: #232323; */
+
+    background-color: transparent;
+}
+
+footer .social-dk li.facebook2 a {
+    color: rgba(191, 211, 60, 1);
+    /* visibility: hidden; */ /* toàn bộ class sẽ bị ẩn đi */
+    opacity: 0.5;
+}
+
+.transparent-color {
+    color:rgba(0, 0, 255, 0);
+}
+
+/* đổi hình footer, bottom là cách ra 3rem, bỏ phần max-width=50% sẽ làm full bề ngang dòng */
+footer .fixed-shape-dk {
+    /* absolute là đặt chính xac vào một vị trí nào đó và ontop */
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    /* top: -150px; */
+    opacity: 0.2;
+    /* max-width: 50%; */
+    /* background-image: cover; */
+}
+
+/* đổi phần illustration để không bị dịch hình lên trên */
+.services-area .services-box .shape-illustration-dk {
+    position: absolute;
+    left: 0;
+    top: -150px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+  
+.services-area .services-box .shape-illustration-dk img {
+    height: 100%;
+    width: 100%;
+}
+  
+/* đường kẻ dọc giữa logo và Exproler */
+/* footer .about img {
+    height: 60px;
+} */
+
+/* .bgImage-dk {
+    background: url(img/02_Pattern/Pattern_White_Transparent_2.png);
+ }
+ 
+ @media screen and (min-width: 769px) {
+   .bgImage-dk {
+     background: url(img/02_Pattern/Pattern_White_Transparent_3.png);
+   }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+   .bgImage-dk {
+     background: url(img/02_Pattern/Pattern_White_Transparent_2.png);
+   }
+ } */
+
+.box {
+    position: absolute;
+    background-color: rgba(53, 178, 0, 0.8);
+    
+}
+.box .text {
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    bottom: 28px;
+    /* left: 0; */
+    background: rgba(178, 0, 0, 0.8);
+    /* font-family: Arial,sans-serif; */
+    color: #fff;
+    width: 100%; /* Set the width of the positioned div */
+    height: 10%;
+}
+
+/* nếu thêm div này vào sẽ overlay color on top of image làm cho image mờ đi */
+.overlay-div{
+    height:100%;
+    width: 100%;
+    position:absolute;
+    background-color:#000;
+    opacity:.7;
+ }
+
+/*  */
+.card-custom-dk {
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+.bg-custom-dk{
+    /* padding-top: 10rem; */
+    /* margin-top: 10rem; */
+    background-color: rgba(178, 0, 0, 0.8);
+
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(178, 0, 0, 0.8)); */
+    /* background-image:url('http://placehold.it/850x650'); */
+}
+
+/* https://github.com/peterdanis/custom-bootstrap-cards/blob/master/small-card.css */
+.card-custom {
+    overflow: hidden;
+    /* min-height: 450px; */
+    border: 0;
+    /* box-shadow: 0 0 15px rgba(10, 10, 10, 0.3); */
+}
+
+.card-custom-img {
+    height: 250px;
+    /* min-height: 200px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+}
+  
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+    position: absolute;
+    content: '';
+    top: 161px;
+    left: 0;
+    width: 0;
+    height: 0;
+    /* border-style: solid; */
+    border-top-width: 40px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    
+    /* 2 dòng dưới tạo đường dốc xuống từ phải qua trái */
+    /* border-left-width: 545px;
+    border-left-width: calc(575px - 5vw); */
+    
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+}
+
+.card-custom-avatar img {
+    /* border-radius: 50%; */
+    /* box-shadow: 0 0 15px rgba(10, 10, 10, 0.3); */
+    position: absolute;
+    top: 0px;
+    left: 0rem;
+    /* width: 100px;
+    height: 100px; */
+    /* max-height: 500px; */
+    z-index: 0;
+}
+
+.bg-orange {
+    background-color: rgb(238, 171, 13);
+}
+
+.fun-factor-area-dk .fun-fact-items .medium {
+    /* text-transform: capitalize; */
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    display: block;
+    color: #232323;
+}
